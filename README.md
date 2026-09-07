@@ -35,13 +35,29 @@ Evaluated across all **40 ground-truth queries** on the 4,250-message corpus:
 
 | Search Mode | Hit@1 (Accuracy) | Hit@5 (Recall) | Mean Reciprocal Rank (MRR) | Zero-Keyword Hit@5 | Avg Latency |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **1. Naive Keyword Search** | 22.5% | 40.0% | 0.282 | **0.0%** | 0.12 ms |
-| **2. Naive Isolated Vector Search** | 22.5% | 40.0% | 0.282 | **0.0%** | 0.10 ms |
-| **3. Contextual Hinglish Hybrid (Ours)** | **62.5%** | **90.0%** | **0.712** | **76.5%** | **2.54 ms** |
+| **1. Naive Keyword Search** | 22.5% | 40.0% | 0.282 | **0.0%** | 0.13 ms |
+| **2. Naive Isolated Vector Search** | 22.5% | 40.0% | 0.282 | **0.0%** | 0.09 ms |
+| **3. Contextual Hinglish Hybrid (Ours)** | **62.5%** | **90.0%** | **0.727** | **76.5%** | **3.35 ms** |
 
 > **Key Takeaway**: Naive keyword search has a **0.0% success rate** on zero-keyword queries because real people write *"chalo pahad pakka final karte hai"* instead of literal English. Our contextual hybrid pipeline scores **76.5% on zero-keyword queries** and **90.0% recall overall**.
 
 ---
+
+## 🧪 Synthetic Corpus & What is Mocked
+
+- **Synthetic Group Chat Data (`data/group_chat_data.json`, `data/group_chat_export.txt`)**:
+  - Deterministically generated via `engine/corpus_generator.py` using **Seed 42**.
+  - Simulates **4,250 realistic, messy Hinglish messages** spanning **6 months** (Oct 1, 2025 to Mar 31, 2026) across **8 distinct participants** with unique typing styles.
+  - Embedded with **3 concrete multi-day decision threads**:
+    1. *The Manali Mountain Trip*: Destination ideation (Goa vs Himachal), date poll (Dec 18–23), wooden cottage in Old Manali (32k total), budget consensus (₹9,500/head), the decision moment (*"chalo pahad pakka final karte hai ticket book karoongi mai aaj"*), tempo traveler booking from Chandigarh, and ₹3,000 advance GPay collection.
+    2. *Indiranagar 3BHK Flat Hunt & Lease*: Broker Srinivas inspections, East-facing balcony, pet restrictions (*"owner ne bola billi kutte allow nahi karenge flat ke andar"*), rent negotiation down to ₹60,000, and deposit transfer (*"broker ko token advance bhej diya maine kal sham ko receipt bhi aagayi"*).
+    3. *Surprise Farewell & Reunion Gift*: Secret UK masters send-off planning for Amit, pooling ₹1,500 each via GPay (*"sab log pandrah sau gpay kar do priya ke number pe"*), Sony WH-1000XM5 headphones ordered on Amazon, Magnolia Bakery custom cake, and Skydeck rooftop table reserved for March 28th.
+  - Realistic chat noise includes code-mixed Hinglish (*"jugaad"*, *"rokda"*, *"kharcha"*, *"pakka"*, *"safar"*), typos (*"mnaali"*, *"kl"*, *"thikkk"*, *"bgt"*), forwarded messages (`[Forwarded: ...]`), media placeholders (`<image omitted>`, `<voice note>`), and one-word replies (*"haan"*, *"done"*, *"+1"*, *"k"*).
+- **Benchmark Suite (`data/benchmark_queries.json`)**:
+  - 40 ground-truth evaluation queries across Semantic, Attributed, Temporal, and Hybrid shapes.
+  - Exactly **17 queries have strictly 0% keyword overlap** with target messages.
+- **Evaluation Engine (`evaluate.py`)**:
+  - Programmatically executes and compares Naive Keyword Search, Naive Vector Search, and Contextual Hinglish Hybrid search across the full 40-query test set.
 
 ## 🏗️ System Architecture
 
