@@ -137,11 +137,6 @@ python app.py 8080
 ```
 Then open [http://localhost:8080](http://localhost:8080) in your web browser.
 
-### 3. Interactive Generative UI
-Open the standalone interactive artifact directly in your browser or Antigravity viewer:
-```
-file:///C:/Users/Harshita/.gemini/antigravity/brain/d5de7e4d-4ed9-47af-9c20-480b933c8249/group_chat_search_app.html
-```
 
 ---
 
