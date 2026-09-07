@@ -52,8 +52,9 @@ CONCEPT_CLUSTERS = {
         "ergonomic", "furniture", "desk", "standing desk", "back pain", "discomfort", "physical discomfort", "health"
     ],
     "budget": [
-        "budget", "cost", "expense", "price", "spending", "ceiling",
-        "kharcha", "rokda", "hisab", "per head", "paisa", "paise", "bgt"
+        "budget", "cost", "expense", "price", "spending",
+        "kharcha", "rokda", "hisab", "paisa", "paise", "bgt",
+        "32k", "9500", "9,500", "reasonable", "per person", "amount", "total", "sab"
     ],
     "ramen": [
         "ramen", "noodles", "japanese", "miso", "spicy miso", "food", "eat", "restaurant"
@@ -96,7 +97,6 @@ for concept, words in CONCEPT_CLUSTERS.items():
         WORD_TO_CONCEPTS.setdefault(w.lower(), set()).add(concept)
 
 def simple_stem(word):
-    """Simple rule-based suffix stemming for common variations."""
     w = word.lower()
     for suffix in ["ing", "ers", "er", "es", "ed", "s"]:
         if len(w) > len(suffix) + 3 and w.endswith(suffix):

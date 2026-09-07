@@ -111,14 +111,12 @@ class GroupChatSearchEngine:
         q_lower = query.lower()
         target_sender = None
 
-        # 1. Grammar-aware speaker extraction: "What did <Speaker> say/suggest/propose..."
         speaker_match = re.search(r'\b(?:what\s+did|did|what\s+was|who\s+sent)\s+([a-zA-Z]+)\b', q_lower)
         if speaker_match:
             cand = speaker_match.group(1).capitalize()
             if cand in PARTICIPANTS:
                 target_sender = cand
 
-        # 2. Possessive check: "<Speaker>'s advice / suggestion"
         if not target_sender:
             possessive_match = re.search(r'\b([a-zA-Z]+)\'s\b', q_lower)
             if possessive_match:
@@ -126,7 +124,6 @@ class GroupChatSearchEngine:
                 if cand in PARTICIPANTS:
                     target_sender = cand
 
-        # 3. Fallback to participant search in query order
         if not target_sender:
             words = [w.capitalize() for w in re.findall(r'[a-zA-Z]+', query)]
             for w in words:
@@ -162,13 +159,17 @@ class GroupChatSearchEngine:
         elif time_range:
             shape = "temporal"
 
+        is_seeking_amount = bool(re.search(r'\b(how much|how many|amount|cost|price|budget|total|fee|rent|kitna|kharcha)\b', q_lower))
+
         return {
             "raw_query": query,
             "target_sender": target_sender,
             "time_range": time_range,
             "expanded_tokens": all_tokens,
             "concepts": concepts,
-            "query_shape": shape
+            "query_shape": shape,
+            "is_seeking_amount": is_seeking_amount,
+            "has_total": "total" in q_lower
         }
 
     def bm25_score(self, query_tokens, index, doc_lens, avg_len, k1=1.5, b=0.75):
@@ -209,6 +210,8 @@ class GroupChatSearchEngine:
 
         target_sender = parsed["target_sender"]
         time_range = parsed["time_range"]
+        is_amount = parsed["is_seeking_amount"]
+        has_total = parsed["has_total"]
 
         for idx in all_candidates:
             msg = self.messages[idx]
@@ -217,12 +220,14 @@ class GroupChatSearchEngine:
 
             score = s_ctx * 1.2 + s_iso * 1.8
 
+            # Attribution Boost
             if target_sender:
                 if msg["sender"].lower() == target_sender.lower():
                     score *= 3.8
                 elif target_sender.lower() in msg["raw_context_text"].lower():
                     score *= 2.0
 
+            # Temporal Weighting
             if time_range:
                 start_dt, end_dt = time_range
                 msg_dt = msg["dt"]
@@ -232,6 +237,19 @@ class GroupChatSearchEngine:
                     days_diff = min(abs((msg_dt - start_dt).days), abs((msg_dt - end_dt).days))
                     decay = math.exp(-days_diff / 12.0)
                     score *= (0.15 + 0.85 * decay)
+
+            # Amount / Figure Seeking Boost vs Question Penalty
+            if is_amount:
+                text_low = msg["text"].lower()
+                has_num = bool(re.search(r'(\d+|₹|rs|k\b|sau|hazaar)', text_low))
+                is_question = ('?' in text_low or bool(re.search(r'\b(kitna|kya|kab|kaun)\b', text_low)))
+                
+                if has_num:
+                    score *= 1.8
+                if is_question:
+                    score *= 0.5
+                if has_total and bool(re.search(r'\b(total|sab|all|overall)\b', text_low)):
+                    score *= 1.5
 
             final_scores[idx] = score
 
