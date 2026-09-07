@@ -152,3 +152,20 @@ https://github.com/HarshitaKushwah835/group-chat-search
 # Clone repository:
 git clone https://github.com/HarshitaKushwah835/group-chat-search.git
 ```
+### GitHub Repository Publication
+
+The repository contains the full source code, test suite, benchmark runner, and documentation.
+
+Run Evaluation: `python evaluate.py data`
+
+Start Web App: `python app.py 8080`
+
+Public GitHub Repository: https://github.com/HarshitaKushwah835/group-chat-search### GitHub Repository Publication
+
+The repository contains the full source code, test suite, benchmark runner, and documentation.
+
+Run Evaluation: `python evaluate.py data`
+
+Start Web App: `python app.py 8080`
+
+Public GitHub Repository: https://github.com/HarshitaKushwah835/group-chat-search
