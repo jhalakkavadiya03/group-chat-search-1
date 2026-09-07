@@ -1,0 +1,1218 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "When was the vacation finalized?",
+    "category": "semantic",
+    "target_message_id": 1568,
+    "target_message": {
+      "id": 1568,
+      "timestamp": "2025-10-25 05:50:00",
+      "iso_timestamp": "2025-10-25T05:50:00",
+      "sender": "Priya",
+      "text": "chalo pahad pakka final karte hai ticket book karoongi mai aaj",
+      "thread": "manali_trip",
+      "key_marker": "DECIDE_MANALI_TRIP"
+    },
+    "context_message_ids": [
+      1564,
+      1565,
+      1566,
+      1567,
+      1568,
+      1569,
+      1570,
+      1571,
+      1572
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Priya finalized the trip by saying 'chalo pahad pakka final karte hai ticket book karoongi mai aaj'."
+  },
+  {
+    "query_id": "Q02",
+    "query": "Who paid the rental deposit?",
+    "category": "semantic",
+    "target_message_id": 2739,
+    "target_message": {
+      "id": 2739,
+      "timestamp": "2025-12-13 00:00:00",
+      "iso_timestamp": "2025-12-13T00:00:00",
+      "sender": "Vikram",
+      "text": "broker ko token advance bhej diya maine kal sham ko receipt bhi aagayi",
+      "thread": "flat_hunt",
+      "key_marker": "FLAT_DEPOSIT_PAID"
+    },
+    "context_message_ids": [
+      2735,
+      2736,
+      2737,
+      2738,
+      2739,
+      2740,
+      2741,
+      2742,
+      2743
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Vikram paid the token advance to the broker and got the receipt."
+  },
+  {
+    "query_id": "Q03",
+    "query": "How much did each person contribute for the farewell gift?",
+    "category": "semantic",
+    "target_message_id": 4226,
+    "target_message": {
+      "id": 4226,
+      "timestamp": "2026-02-13 21:30:00",
+      "iso_timestamp": "2026-02-13T21:30:00",
+      "sender": "Priya",
+      "text": "sab log pandrah sau gpay kar do priya ke number pe",
+      "thread": "farewell_gift",
+      "key_marker": "GIFT_CONTRIBUTION"
+    },
+    "context_message_ids": [
+      4222,
+      4223,
+      4224,
+      4225,
+      4226,
+      4227,
+      4228,
+      4229,
+      4230
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Priya asked everyone to GPay 1500 (pandrah sau) to her number."
+  },
+  {
+    "query_id": "Q04",
+    "query": "What is the pet policy for the new apartment?",
+    "category": "semantic",
+    "target_message_id": 2637,
+    "target_message": {
+      "id": 2637,
+      "timestamp": "2025-12-08 20:40:00",
+      "iso_timestamp": "2025-12-08T20:40:00",
+      "sender": "Vikram",
+      "text": "owner ne bola billi kutte allow nahi karenge flat ke andar",
+      "thread": "flat_hunt",
+      "key_marker": "PET_POLICY"
+    },
+    "context_message_ids": [
+      2633,
+      2634,
+      2635,
+      2636,
+      2637,
+      2638,
+      2639,
+      2640,
+      2641
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Vikram reported the owner said dogs and cats are not allowed inside the flat."
+  },
+  {
+    "query_id": "Q05",
+    "query": "When does our tenancy begin?",
+    "category": "temporal",
+    "target_message_id": 2740,
+    "target_message": {
+      "id": 2740,
+      "timestamp": "2025-12-13 00:05:00",
+      "iso_timestamp": "2025-12-13T00:05:00",
+      "sender": "Rohan",
+      "text": "Lease starts Jan 15th, agreement draft will come on Monday",
+      "thread": "flat_hunt",
+      "key_marker": "LEASE_START_DATE"
+    },
+    "context_message_ids": [
+      2736,
+      2737,
+      2738,
+      2739,
+      2740,
+      2741,
+      2742,
+      2743,
+      2744
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Rohan confirmed the lease starts Jan 15th."
+  },
+  {
+    "query_id": "Q06",
+    "query": "What precautions should we take for the spring festival?",
+    "category": "semantic",
+    "target_message_id": 4935,
+    "target_message": {
+      "id": 4935,
+      "timestamp": "2026-03-15 19:45:00",
+      "iso_timestamp": "2026-03-15T19:45:00",
+      "sender": "Sneha",
+      "text": "Holi ke colors organic hi khareedna skin allergy ho jati hai chemical se",
+      "thread": "event",
+      "key_marker": "SNEHA_HOLI_WARNING"
+    },
+    "context_message_ids": [
+      4931,
+      4932,
+      4933,
+      4934,
+      4935,
+      4936,
+      4937,
+      4938,
+      4939
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Sneha warned to buy organic colors for Holi to avoid skin allergies."
+  },
+  {
+    "query_id": "Q07",
+    "query": "What surprise dessert is being prepared?",
+    "category": "semantic",
+    "target_message_id": 4467,
+    "target_message": {
+      "id": 4467,
+      "timestamp": "2026-02-23 22:53:20",
+      "iso_timestamp": "2026-02-23T22:53:20",
+      "sender": "Neha",
+      "text": "Custom cake with passport and aeroplane design ordered from Magnolia Bakery",
+      "thread": "farewell_gift",
+      "key_marker": "CAKE_DETAILS"
+    },
+    "context_message_ids": [
+      4463,
+      4464,
+      4465,
+      4466,
+      4467,
+      4468,
+      4469,
+      4470,
+      4471
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Neha ordered a custom cake with passport and aeroplane design from Magnolia Bakery."
+  },
+  {
+    "query_id": "Q08",
+    "query": "Where is our send-off dinner gathering scheduled?",
+    "category": "semantic",
+    "target_message_id": 4539,
+    "target_message": {
+      "id": 4539,
+      "timestamp": "2026-02-26 23:26:40",
+      "iso_timestamp": "2026-02-26T23:26:40",
+      "sender": "Pooja",
+      "text": "Skydeck rooftop table booked for 8:30 PM on Saturday 28th",
+      "thread": "farewell_gift",
+      "key_marker": "FAREWELL_VENUE_DATE"
+    },
+    "context_message_ids": [
+      4535,
+      4536,
+      4537,
+      4538,
+      4539,
+      4540,
+      4541,
+      4542,
+      4543
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Pooja booked a rooftop table at Skydeck for 8:30 PM on Saturday 28th."
+  },
+  {
+    "query_id": "Q09",
+    "query": "How much annual festival incentive did company transfer?",
+    "category": "semantic",
+    "target_message_id": 1782,
+    "target_message": {
+      "id": 1782,
+      "timestamp": "2025-11-02 19:10:00",
+      "iso_timestamp": "2025-11-02T19:10:00",
+      "sender": "Amit",
+      "text": "Flat 40k after tax deduction credited",
+      "thread": "event",
+      "key_marker": "BONUS_AMOUNT"
+    },
+    "context_message_ids": [
+      1778,
+      1779,
+      1780,
+      1781,
+      1782,
+      1783,
+      1784,
+      1785,
+      1786
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Amit confirmed flat 40k after tax deduction was credited as Diwali bonus."
+  },
+  {
+    "query_id": "Q10",
+    "query": "Which ergonomic furniture helped with physical discomfort?",
+    "category": "semantic",
+    "target_message_id": 3602,
+    "target_message": {
+      "id": 3602,
+      "timestamp": "2026-01-18 15:30:00",
+      "iso_timestamp": "2026-01-18T15:30:00",
+      "sender": "Amit",
+      "text": "Switched to standing desk, lower back pain drastically reduced",
+      "thread": "event",
+      "key_marker": "AMIT_HEALTH_UPDATE"
+    },
+    "context_message_ids": [
+      3598,
+      3599,
+      3600,
+      3601,
+      3602,
+      3603,
+      3604,
+      3605,
+      3606
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Amit switched to a standing desk which drastically reduced his lower back pain."
+  },
+  {
+    "query_id": "Q11",
+    "query": "When did we decide on Manali?",
+    "category": "semantic",
+    "target_message_id": 1568,
+    "target_message": {
+      "id": 1568,
+      "timestamp": "2025-10-25 05:50:00",
+      "iso_timestamp": "2025-10-25T05:50:00",
+      "sender": "Priya",
+      "text": "chalo pahad pakka final karte hai ticket book karoongi mai aaj",
+      "thread": "manali_trip",
+      "key_marker": "DECIDE_MANALI_TRIP"
+    },
+    "context_message_ids": [
+      1564,
+      1565,
+      1566,
+      1567,
+      1568,
+      1569,
+      1570,
+      1571,
+      1572
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Priya decided to finalize the mountain trip on Oct 24th."
+  },
+  {
+    "query_id": "Q12",
+    "query": "What did we decide about traveling from Chandigarh to Manali?",
+    "category": "semantic",
+    "target_message_id": 1591,
+    "target_message": {
+      "id": 1591,
+      "timestamp": "2025-10-25 19:00:00",
+      "iso_timestamp": "2025-10-25T19:00:00",
+      "sender": "Rohan",
+      "text": "Chandigarh to Old Manali tempo traveler booked, driver details sent on email",
+      "thread": "manali_trip",
+      "key_marker": "CAB_BOOKING_DETAILS"
+    },
+    "context_message_ids": [
+      1587,
+      1588,
+      1589,
+      1590,
+      1591,
+      1592,
+      1593,
+      1594,
+      1595
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "manali",
+      "chandigarh"
+    ],
+    "ground_truth_answer": "Rohan booked a tempo traveler from Chandigarh to Old Manali."
+  },
+  {
+    "query_id": "Q13",
+    "query": "How much advance money did Priya collect for the trip?",
+    "category": "semantic",
+    "target_message_id": 1592,
+    "target_message": {
+      "id": 1592,
+      "timestamp": "2025-10-25 19:16:40",
+      "iso_timestamp": "2025-10-25T19:16:40",
+      "sender": "Priya",
+      "text": "Sab log ₹3,000 advance GPay kar do mujhe for hotel and cab booking",
+      "thread": "manali_trip",
+      "key_marker": "TRIP_ADVANCE_AMOUNT"
+    },
+    "context_message_ids": [
+      1588,
+      1589,
+      1590,
+      1591,
+      1592,
+      1593,
+      1594,
+      1595,
+      1596
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "advance"
+    ],
+    "ground_truth_answer": "Priya asked everyone to GPay ₹3,000 advance for hotel and cab booking."
+  },
+  {
+    "query_id": "Q14",
+    "query": "Which noise cancelling headphones were chosen for Amit?",
+    "category": "semantic",
+    "target_message_id": 4348,
+    "target_message": {
+      "id": 4348,
+      "timestamp": "2026-02-18 22:20:00",
+      "iso_timestamp": "2026-02-18T22:20:00",
+      "sender": "Rohan",
+      "text": "Sony WH-1000XM5 black color order kar diya hai Amazon se Friday ko deliver hoga",
+      "thread": "farewell_gift",
+      "key_marker": "GIFT_ORDER_CONFIRMED"
+    },
+    "context_message_ids": [
+      4344,
+      4345,
+      4346,
+      4347,
+      4348,
+      4349,
+      4350,
+      4351,
+      4352
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Rohan ordered Sony WH-1000XM5 black headphones from Amazon."
+  },
+  {
+    "query_id": "Q15",
+    "query": "What was the negotiated flat rent in Indiranagar?",
+    "category": "semantic",
+    "target_message_id": 2738,
+    "target_message": {
+      "id": 2738,
+      "timestamp": "2025-12-12 23:09:57",
+      "iso_timestamp": "2025-12-12T23:09:57",
+      "sender": "Vikram",
+      "text": "[Forwarded]: 10 signs you need a mountain trip right now",
+      "thread": "general"
+    },
+    "context_message_ids": [
+      2734,
+      2735,
+      2736,
+      2737,
+      2738,
+      2739,
+      2740,
+      2741,
+      2742
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Vikram negotiated rent down to ₹60,000 including maintenance."
+  },
+  {
+    "query_id": "Q16",
+    "query": "What did Sneha say about her leave dates in November?",
+    "category": "attributed",
+    "target_message_id": 1170,
+    "target_message": {
+      "id": 1170,
+      "timestamp": "2025-10-08 14:20:00",
+      "iso_timestamp": "2025-10-08T14:20:00",
+      "sender": "Sneha",
+      "text": "Guys meri leaves 15th to 20th November ke beech blocked hai audit ke chakkar me",
+      "thread": "event",
+      "key_marker": "SNEHA_LEAVE_RESTRICTION"
+    },
+    "context_message_ids": [
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "november"
+    ],
+    "ground_truth_answer": "Sneha mentioned her leaves are blocked between 15th to 20th November for an audit."
+  },
+  {
+    "query_id": "Q17",
+    "query": "What did Rohan say about his bike?",
+    "category": "attributed",
+    "target_message_id": 1257,
+    "target_message": {
+      "id": 1257,
+      "timestamp": "2025-10-12 11:15:00",
+      "iso_timestamp": "2025-10-12T11:15:00",
+      "sender": "Rohan",
+      "text": "Meri bike servicing pe gayi hai 3 din ke liye",
+      "thread": "event",
+      "key_marker": "ROHAN_BIKE_SERVICE"
+    },
+    "context_message_ids": [
+      1253,
+      1254,
+      1255,
+      1256,
+      1257,
+      1258,
+      1259,
+      1260,
+      1261
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "bike"
+    ],
+    "ground_truth_answer": "Rohan said his bike is gone for servicing for 3 days."
+  },
+  {
+    "query_id": "Q18",
+    "query": "What financial advice did Priya share about emergency funds?",
+    "category": "attributed",
+    "target_message_id": 1921,
+    "target_message": {
+      "id": 1921,
+      "timestamp": "2025-11-08 16:45:00",
+      "iso_timestamp": "2025-11-08T16:45:00",
+      "sender": "Priya",
+      "text": "Emergency fund reminder: always keep 6 months expenses in liquid fund",
+      "thread": "event",
+      "key_marker": "PRIYA_FINANCIAL_ADVICE"
+    },
+    "context_message_ids": [
+      1917,
+      1918,
+      1919,
+      1920,
+      1921,
+      1922,
+      1923,
+      1924,
+      1925
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "emergency"
+    ],
+    "ground_truth_answer": "Priya advised keeping 6 months expenses in a liquid fund."
+  },
+  {
+    "query_id": "Q19",
+    "query": "What gaming tournament did Rahul propose?",
+    "category": "attributed",
+    "target_message_id": 2090,
+    "target_message": {
+      "id": 2090,
+      "timestamp": "2025-11-15 20:10:00",
+      "iso_timestamp": "2025-11-15T20:10:00",
+      "sender": "Rahul",
+      "text": "bhai FIFA tournament rakhte hai weekend pe mere flat pe",
+      "thread": "event",
+      "key_marker": "RAHUL_FIFA"
+    },
+    "context_message_ids": [
+      2086,
+      2087,
+      2088,
+      2089,
+      2090,
+      2091,
+      2092,
+      2093,
+      2094
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "tournament"
+    ],
+    "ground_truth_answer": "Rahul proposed hosting a FIFA tournament at his flat."
+  },
+  {
+    "query_id": "Q20",
+    "query": "What discount hack did Vikram share for Zomato?",
+    "category": "attributed",
+    "target_message_id": 2388,
+    "target_message": {
+      "id": 2388,
+      "timestamp": "2025-11-28 13:30:00",
+      "iso_timestamp": "2025-11-28T13:30:00",
+      "sender": "Vikram",
+      "text": "Zomato gold renew kar liya 30 rupay me coupon laga ke",
+      "thread": "event",
+      "key_marker": "VIKRAM_SAVINGS_HACK"
+    },
+    "context_message_ids": [
+      2384,
+      2385,
+      2386,
+      2387,
+      2388,
+      2389,
+      2390,
+      2391,
+      2392
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "zomato"
+    ],
+    "ground_truth_answer": "Vikram renewed Zomato Gold for 30 rupees using a coupon."
+  },
+  {
+    "query_id": "Q21",
+    "query": "What ramen restaurant did Sneha recommend in Indiranagar?",
+    "category": "attributed",
+    "target_message_id": 2683,
+    "target_message": {
+      "id": 2683,
+      "timestamp": "2025-12-10 17:00:00",
+      "iso_timestamp": "2025-12-10T17:00:00",
+      "sender": "Sneha",
+      "text": "The new ramen place near 12th main Indiranagar has the best spicy miso",
+      "thread": "event",
+      "key_marker": "SNEHA_RAMEN_REC"
+    },
+    "context_message_ids": [
+      2679,
+      2680,
+      2681,
+      2682,
+      2683,
+      2684,
+      2685,
+      2686,
+      2687
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "indiranagar",
+      "ramen"
+    ],
+    "ground_truth_answer": "Sneha recommended the new ramen place near 12th main Indiranagar for spicy miso."
+  },
+  {
+    "query_id": "Q22",
+    "query": "What reminder did Priya give about tax proofs?",
+    "category": "attributed",
+    "target_message_id": 3700,
+    "target_message": {
+      "id": 3700,
+      "timestamp": "2026-01-22 18:45:00",
+      "iso_timestamp": "2026-01-22T18:45:00",
+      "sender": "Priya",
+      "text": "Don't forget to submit tax saving investment proofs before Jan 25th",
+      "thread": "event",
+      "key_marker": "PRIYA_TAX_REMINDER"
+    },
+    "context_message_ids": [
+      3696,
+      3697,
+      3698,
+      3699,
+      3700,
+      3701,
+      3702,
+      3703,
+      3704
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "tax",
+      "proofs"
+    ],
+    "ground_truth_answer": "Priya reminded everyone to submit tax saving investment proofs before Jan 25th."
+  },
+  {
+    "query_id": "Q23",
+    "query": "What thrift store did Neha find in Koramangala?",
+    "category": "attributed",
+    "target_message_id": 4022,
+    "target_message": {
+      "id": 4022,
+      "timestamp": "2026-02-05 12:10:00",
+      "iso_timestamp": "2026-02-05T12:10:00",
+      "sender": "Neha",
+      "text": "Found an amazing thrift store in Koramangala for vintage jackets",
+      "thread": "event",
+      "key_marker": "NEHA_THRIFT_STORE"
+    },
+    "context_message_ids": [
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "koramangala",
+      "thrift",
+      "store"
+    ],
+    "ground_truth_answer": "Neha found a thrift store in Koramangala for vintage jackets."
+  },
+  {
+    "query_id": "Q24",
+    "query": "What did Rahul do on Valentine's Day?",
+    "category": "attributed",
+    "target_message_id": 4252,
+    "target_message": {
+      "id": 4252,
+      "timestamp": "2026-02-14 21:00:00",
+      "iso_timestamp": "2026-02-14T21:00:00",
+      "sender": "Rahul",
+      "text": "Valentine's day pe Zomato delivery boy ko 100 rs tip diya, he looked so happy",
+      "thread": "event",
+      "key_marker": "RAHUL_VALENTINE_TIP"
+    },
+    "context_message_ids": [
+      4248,
+      4249,
+      4250,
+      4251,
+      4252,
+      4253,
+      4254,
+      4255,
+      4256
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "valentine",
+      "day",
+      "s"
+    ],
+    "ground_truth_answer": "Rahul tipped 100 rs to a Zomato delivery boy on Valentine's Day."
+  },
+  {
+    "query_id": "Q25",
+    "query": "What did Vikram share about home loan rates?",
+    "category": "attributed",
+    "target_message_id": 4696,
+    "target_message": {
+      "id": 4696,
+      "timestamp": "2026-03-05 16:20:00",
+      "iso_timestamp": "2026-03-05T16:20:00",
+      "sender": "Vikram",
+      "text": "Home loan interest rates reduced by 15 bps today",
+      "thread": "event",
+      "key_marker": "VIKRAM_FINANCE_NEWS"
+    },
+    "context_message_ids": [
+      4692,
+      4693,
+      4694,
+      4695,
+      4696,
+      4697,
+      4698,
+      4699,
+      4700
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "home",
+      "rates",
+      "loan"
+    ],
+    "ground_truth_answer": "Vikram shared that home loan interest rates were cut by 15 bps."
+  },
+  {
+    "query_id": "Q26",
+    "query": "What did Priya say about the wooden cottage price in Old Manali?",
+    "category": "attributed",
+    "target_message_id": 1564,
+    "target_message": {
+      "id": 1564,
+      "timestamp": "2025-10-24 19:56:57",
+      "iso_timestamp": "2025-10-24T19:56:57",
+      "sender": "Rahul",
+      "text": "Keychron K2 lele chup chap",
+      "thread": "general"
+    },
+    "context_message_ids": [
+      1560,
+      1561,
+      1562,
+      1563,
+      1564,
+      1565,
+      1566,
+      1567,
+      1568
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Priya noted the Old Manali wooden cottage was 32k for 4 nights total."
+  },
+  {
+    "query_id": "Q27",
+    "query": "What did Amit announce about his Diwali bonus?",
+    "category": "attributed",
+    "target_message_id": 1781,
+    "target_message": {
+      "id": 1781,
+      "timestamp": "2025-11-02 19:02:00",
+      "iso_timestamp": "2025-11-02T19:02:00",
+      "sender": "Amit",
+      "text": "Diwali bonus aagaya company se finally",
+      "thread": "event",
+      "key_marker": "DIWALI_BONUS"
+    },
+    "context_message_ids": [
+      1777,
+      1778,
+      1779,
+      1780,
+      1781,
+      1782,
+      1783,
+      1784,
+      1785
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "diwali",
+      "bonus"
+    ],
+    "ground_truth_answer": "Amit announced that his Diwali bonus was finally credited."
+  },
+  {
+    "query_id": "Q28",
+    "query": "What did Neha suggest for Amit's surprise send-off?",
+    "category": "attributed",
+    "target_message_id": 4219,
+    "target_message": {
+      "id": 4219,
+      "timestamp": "2026-02-13 15:26:58",
+      "iso_timestamp": "2026-02-13T15:26:58",
+      "sender": "Priya",
+      "text": "count me in",
+      "thread": "general"
+    },
+    "context_message_ids": [
+      4215,
+      4216,
+      4217,
+      4218,
+      4219,
+      4220,
+      4221,
+      4222,
+      4223
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Neha initiated planning Amit's UK masters send-off surprise."
+  },
+  {
+    "query_id": "Q29",
+    "query": "What did we discuss on Diwali morning in November?",
+    "category": "temporal",
+    "target_message_id": 1743,
+    "target_message": {
+      "id": 1743,
+      "timestamp": "2025-11-01 10:00:00",
+      "iso_timestamp": "2025-11-01T10:00:00",
+      "sender": "Pooja",
+      "text": "Happy Diwali everyone! Ghar kab jaa rahe sab?",
+      "thread": "event",
+      "key_marker": "DIWALI_CHAT"
+    },
+    "context_message_ids": [
+      1739,
+      1740,
+      1741,
+      1742,
+      1743,
+      1744,
+      1745,
+      1746,
+      1747
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "diwali"
+    ],
+    "ground_truth_answer": "Pooja wished everyone Happy Diwali and asked when people were visiting home."
+  },
+  {
+    "query_id": "Q30",
+    "query": "Who sent the first New Year wish right at midnight?",
+    "category": "temporal",
+    "target_message_id": 3187,
+    "target_message": {
+      "id": 3187,
+      "timestamp": "2026-01-01 00:01:00",
+      "iso_timestamp": "2026-01-01T00:01:00",
+      "sender": "Priya",
+      "text": "HAPPY NEW YEAR FAM!! ❤️🎉",
+      "thread": "event",
+      "key_marker": "NEW_YEAR_WISH"
+    },
+    "context_message_ids": [
+      3183,
+      3184,
+      3185,
+      3186,
+      3187,
+      3188,
+      3189,
+      3190,
+      3191
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "new",
+      "year"
+    ],
+    "ground_truth_answer": "Priya sent 'HAPPY NEW YEAR FAM!!' at 00:01 on Jan 1st."
+  },
+  {
+    "query_id": "Q31",
+    "query": "What work resolution was shared on New Year's Day?",
+    "category": "temporal",
+    "target_message_id": 3188,
+    "target_message": {
+      "id": 3188,
+      "timestamp": "2026-01-01 00:05:00",
+      "iso_timestamp": "2026-01-01T00:05:00",
+      "sender": "Rohan",
+      "text": "New year resolution: no deploying to prod on Friday",
+      "thread": "event",
+      "key_marker": "NEW_YEAR_RESOLUTION"
+    },
+    "context_message_ids": [
+      3184,
+      3185,
+      3186,
+      3187,
+      3188,
+      3189,
+      3190,
+      3191,
+      3192
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "new",
+      "year",
+      "resolution"
+    ],
+    "ground_truth_answer": "Rohan resolved not to deploy to prod on Fridays."
+  },
+  {
+    "query_id": "Q32",
+    "query": "What happened in the chat right after Diwali bonus was announced?",
+    "category": "temporal",
+    "target_message_id": 1782,
+    "target_message": {
+      "id": 1782,
+      "timestamp": "2025-11-02 19:10:00",
+      "iso_timestamp": "2025-11-02T19:10:00",
+      "sender": "Amit",
+      "text": "Flat 40k after tax deduction credited",
+      "thread": "event",
+      "key_marker": "BONUS_AMOUNT"
+    },
+    "context_message_ids": [
+      1778,
+      1779,
+      1780,
+      1781,
+      1782,
+      1783,
+      1784,
+      1785,
+      1786
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "after"
+    ],
+    "ground_truth_answer": "Amit confirmed his 40k bonus amount after Vikram asked."
+  },
+  {
+    "query_id": "Q33",
+    "query": "What did Sneha warn about in mid-March?",
+    "category": "temporal",
+    "target_message_id": 4935,
+    "target_message": {
+      "id": 4935,
+      "timestamp": "2026-03-15 19:45:00",
+      "iso_timestamp": "2026-03-15T19:45:00",
+      "sender": "Sneha",
+      "text": "Holi ke colors organic hi khareedna skin allergy ho jati hai chemical se",
+      "thread": "event",
+      "key_marker": "SNEHA_HOLI_WARNING"
+    },
+    "context_message_ids": [
+      4931,
+      4932,
+      4933,
+      4934,
+      4935,
+      4936,
+      4937,
+      4938,
+      4939
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Sneha warned about synthetic Holi colors on March 15th."
+  },
+  {
+    "query_id": "Q34",
+    "query": "What transport was booked in late October for the vacation?",
+    "category": "temporal",
+    "target_message_id": 1591,
+    "target_message": {
+      "id": 1591,
+      "timestamp": "2025-10-25 19:00:00",
+      "iso_timestamp": "2025-10-25T19:00:00",
+      "sender": "Rohan",
+      "text": "Chandigarh to Old Manali tempo traveler booked, driver details sent on email",
+      "thread": "manali_trip",
+      "key_marker": "CAB_BOOKING_DETAILS"
+    },
+    "context_message_ids": [
+      1587,
+      1588,
+      1589,
+      1590,
+      1591,
+      1592,
+      1593,
+      1594,
+      1595
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "booked"
+    ],
+    "ground_truth_answer": "Rohan booked the Chandigarh to Old Manali tempo traveler."
+  },
+  {
+    "query_id": "Q35",
+    "query": "What was finalized on March 28th for the farewell?",
+    "category": "temporal",
+    "target_message_id": 4539,
+    "target_message": {
+      "id": 4539,
+      "timestamp": "2026-02-26 23:26:40",
+      "iso_timestamp": "2026-02-26T23:26:40",
+      "sender": "Pooja",
+      "text": "Skydeck rooftop table booked for 8:30 PM on Saturday 28th",
+      "thread": "farewell_gift",
+      "key_marker": "FAREWELL_VENUE_DATE"
+    },
+    "context_message_ids": [
+      4535,
+      4536,
+      4537,
+      4538,
+      4539,
+      4540,
+      4541,
+      4542,
+      4543
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "28th"
+    ],
+    "ground_truth_answer": "Pooja confirmed booking the Skydeck rooftop table for 8:30 PM on March 28th."
+  },
+  {
+    "query_id": "Q36",
+    "query": "What health change was made in mid-January?",
+    "category": "temporal",
+    "target_message_id": 3602,
+    "target_message": {
+      "id": 3602,
+      "timestamp": "2026-01-18 15:30:00",
+      "iso_timestamp": "2026-01-18T15:30:00",
+      "sender": "Amit",
+      "text": "Switched to standing desk, lower back pain drastically reduced",
+      "thread": "event",
+      "key_marker": "AMIT_HEALTH_UPDATE"
+    },
+    "context_message_ids": [
+      3598,
+      3599,
+      3600,
+      3601,
+      3602,
+      3603,
+      3604,
+      3605,
+      3606
+    ],
+    "zero_keyword_overlap": true,
+    "keyword_overlap_tokens": [],
+    "ground_truth_answer": "Amit switched to a standing desk on January 18th."
+  },
+  {
+    "query_id": "Q37",
+    "query": "What did Sneha say about leaves in October?",
+    "category": "hybrid",
+    "target_message_id": 1170,
+    "target_message": {
+      "id": 1170,
+      "timestamp": "2025-10-08 14:20:00",
+      "iso_timestamp": "2025-10-08T14:20:00",
+      "sender": "Sneha",
+      "text": "Guys meri leaves 15th to 20th November ke beech blocked hai audit ke chakkar me",
+      "thread": "event",
+      "key_marker": "SNEHA_LEAVE_RESTRICTION"
+    },
+    "context_message_ids": [
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "leaves"
+    ],
+    "ground_truth_answer": "Sneha shared her November leave block in October."
+  },
+  {
+    "query_id": "Q38",
+    "query": "What did Priya say about tax deadlines in January?",
+    "category": "hybrid",
+    "target_message_id": 3700,
+    "target_message": {
+      "id": 3700,
+      "timestamp": "2026-01-22 18:45:00",
+      "iso_timestamp": "2026-01-22T18:45:00",
+      "sender": "Priya",
+      "text": "Don't forget to submit tax saving investment proofs before Jan 25th",
+      "thread": "event",
+      "key_marker": "PRIYA_TAX_REMINDER"
+    },
+    "context_message_ids": [
+      3696,
+      3697,
+      3698,
+      3699,
+      3700,
+      3701,
+      3702,
+      3703,
+      3704
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "tax"
+    ],
+    "ground_truth_answer": "Priya reminded about Jan 25th tax proof submission."
+  },
+  {
+    "query_id": "Q39",
+    "query": "What did Vikram report about the Indiranagar broker deposit in December?",
+    "category": "hybrid",
+    "target_message_id": 2739,
+    "target_message": {
+      "id": 2739,
+      "timestamp": "2025-12-13 00:00:00",
+      "iso_timestamp": "2025-12-13T00:00:00",
+      "sender": "Vikram",
+      "text": "broker ko token advance bhej diya maine kal sham ko receipt bhi aagayi",
+      "thread": "flat_hunt",
+      "key_marker": "FLAT_DEPOSIT_PAID"
+    },
+    "context_message_ids": [
+      2735,
+      2736,
+      2737,
+      2738,
+      2739,
+      2740,
+      2741,
+      2742,
+      2743
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "broker"
+    ],
+    "ground_truth_answer": "Vikram confirmed paying token advance to broker Srinivas."
+  },
+  {
+    "query_id": "Q40",
+    "query": "What did Rohan order online in February?",
+    "category": "hybrid",
+    "target_message_id": 4348,
+    "target_message": {
+      "id": 4348,
+      "timestamp": "2026-02-18 22:20:00",
+      "iso_timestamp": "2026-02-18T22:20:00",
+      "sender": "Rohan",
+      "text": "Sony WH-1000XM5 black color order kar diya hai Amazon se Friday ko deliver hoga",
+      "thread": "farewell_gift",
+      "key_marker": "GIFT_ORDER_CONFIRMED"
+    },
+    "context_message_ids": [
+      4344,
+      4345,
+      4346,
+      4347,
+      4348,
+      4349,
+      4350,
+      4351,
+      4352
+    ],
+    "zero_keyword_overlap": false,
+    "keyword_overlap_tokens": [
+      "order"
+    ],
+    "ground_truth_answer": "Rohan ordered the Sony XM5 headphones on Amazon in February."
+  }
+]
