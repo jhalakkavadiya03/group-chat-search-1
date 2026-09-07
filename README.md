@@ -143,15 +143,12 @@ Then open [http://localhost:8080](http://localhost:8080) in your web browser.
 
 ## 🌐 Publishing to GitHub
 
-To publish this project to your public GitHub profile:
+To clone or publish this project:
 
-1. Initialize the remote repository on GitHub:
 ```bash
-# Using GitHub CLI:
-gh repo create group-chat-search --public --source=. --remote=origin --push
+# Public GitHub Repository:
+https://github.com/HarshitaKushwah835/group-chat-search
 
-# OR using standard Git:
-git remote add origin https://github.com/<your-username>/group-chat-search.git
-git branch -M main
-git push -u origin main
+# Clone repository:
+git clone https://github.com/HarshitaKushwah835/group-chat-search.git
 ```
