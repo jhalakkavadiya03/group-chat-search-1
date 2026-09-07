@@ -141,31 +141,17 @@ Then open [http://localhost:8080](http://localhost:8080) in your web browser.
 
 ---
 
-## 🌐 Publishing to GitHub
+## 🌐 Public GitHub Repository
 
-To clone or publish this project:
+The repository contains the full source code, test suite, benchmark runner, and interactive application.
+
+- **Repository**: [https://github.com/HarshitaKushwah835/group-chat-search](https://github.com/HarshitaKushwah835/group-chat-search)
+- **Clone Command**: `git clone https://github.com/HarshitaKushwah835/group-chat-search.git`
 
 ```bash
-# Public GitHub Repository:
-https://github.com/HarshitaKushwah835/group-chat-search
+# Run Evaluation
+python evaluate.py data
 
-# Clone repository:
-git clone https://github.com/HarshitaKushwah835/group-chat-search.git
+# Start Web App
+python app.py 8080
 ```
-### GitHub Repository Publication
-
-The repository contains the full source code, test suite, benchmark runner, and documentation.
-
-Run Evaluation: `python evaluate.py data`
-
-Start Web App: `python app.py 8080`
-
-Public GitHub Repository: https://github.com/HarshitaKushwah835/group-chat-search### GitHub Repository Publication
-
-The repository contains the full source code, test suite, benchmark runner, and documentation.
-
-Run Evaluation: `python evaluate.py data`
-
-Start Web App: `python app.py 8080`
-
-Public GitHub Repository: https://github.com/HarshitaKushwah835/group-chat-search
