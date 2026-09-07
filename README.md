@@ -53,6 +53,7 @@ Evaluated across all **40 ground-truth queries** on the 4,250-message corpus:
     2. *Indiranagar 3BHK Flat Hunt & Lease*: Broker Srinivas inspections, East-facing balcony, pet restrictions (*"owner ne bola billi kutte allow nahi karenge flat ke andar"*), rent negotiation down to ₹60,000, and deposit transfer (*"broker ko token advance bhej diya maine kal sham ko receipt bhi aagayi"*).
     3. *Surprise Farewell & Reunion Gift*: Secret UK masters send-off planning for Amit, pooling ₹1,500 each via GPay (*"sab log pandrah sau gpay kar do priya ke number pe"*), Sony WH-1000XM5 headphones ordered on Amazon, Magnolia Bakery custom cake, and Skydeck rooftop table reserved for March 28th.
   - Realistic chat noise includes code-mixed Hinglish (*"jugaad"*, *"rokda"*, *"kharcha"*, *"pakka"*, *"safar"*), typos (*"mnaali"*, *"kl"*, *"thikkk"*, *"bgt"*), forwarded messages (`[Forwarded: ...]`), media placeholders (`<image omitted>`, `<voice note>`), and one-word replies (*"haan"*, *"done"*, *"+1"*, *"k"*).
+  - No real WhatsApp/Telegram account or external chat service is connected.
 - **Benchmark Suite (`data/benchmark_queries.json`)**:
   - 40 ground-truth evaluation queries across Semantic, Attributed, Temporal, and Hybrid shapes.
   - Exactly **17 queries have strictly 0% keyword overlap** with target messages.
