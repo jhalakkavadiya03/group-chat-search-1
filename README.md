@@ -145,8 +145,8 @@ Then open [http://localhost:8080](http://localhost:8080) in your web browser.
 
 The repository contains the full source code, test suite, benchmark runner, and interactive application.
 
-- **Repository**: [https://github.com/HarshitaKushwah835/group-chat-search](https://github.com/HarshitaKushwah835/group-chat-search)
-- **Clone Command**: `git clone https://github.com/HarshitaKushwah835/group-chat-search.git`
+- **Repository**: [https://github.com/jhalakkavadiya03/group-chat-search](https://github.com/Harshi/group-chat-search)
+- **Clone Command**: `git clone https://github.com/jhalakkavadiya03/group-chat-search.git`
 
 ```bash
 # Run Evaluation
